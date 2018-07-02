@@ -1,0 +1,11 @@
+[Unit]
+Description=Start Script
+Requires=multi-user.target
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/alkeryn/bin/systemd/start
+
+[Install]
+WantedBy=multi-user.target

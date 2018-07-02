@@ -25,3 +25,11 @@ etc/pulse/*
 !etc/samba
 etc/samba/*
 !etc/samba/smb.conf
+
+!etc/systemd
+etc/systemd/*
+!etc/systemd/system
+etc/systemd/system/*
+!etc/systemd/system/hdparm.service
+!etc/systemd/system/start.service
+!etc/systemd/system/systemd-nspawn@.service.d

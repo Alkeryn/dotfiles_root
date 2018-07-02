@@ -1,0 +1,9 @@
+[Unit]
+Description=hdparm sleep
+
+[Service]
+Type=oneshot
+ExecStart=/home/alkeryn/bin/systemd/hdd
+
+[Install]
+WantedBy=multi-user.target
