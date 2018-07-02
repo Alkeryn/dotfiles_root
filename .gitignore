@@ -33,3 +33,5 @@ etc/systemd/system/*
 !etc/systemd/system/hdparm.service
 !etc/systemd/system/start.service
 !etc/systemd/system/systemd-nspawn@.service.d
+
+!etc/modprobe.d
