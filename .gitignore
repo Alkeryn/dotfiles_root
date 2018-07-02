@@ -18,3 +18,10 @@ etc/libvirt/*
 !etc/libvirt/qemu
 !etc/libvirt/qemu.conf
 
+!etc/pulse
+etc/pulse/*
+!etc/pulse/daemon.conf
+
+!etc/samba
+etc/samba/*
+!etc/samba/smb.conf
