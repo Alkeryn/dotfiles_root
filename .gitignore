@@ -1,5 +1,8 @@
 /*
 !.gitignore
+!root
+root/*
+!root/.gitconfig
 
 !etc
 etc/*
@@ -22,6 +25,8 @@ etc/libvirt/*
 etc/pulse/*
 !etc/pulse/daemon.conf
 
+!etc/pacman.conf
+
 !etc/samba
 etc/samba/*
 !etc/samba/smb.conf
@@ -35,3 +40,4 @@ etc/systemd/system/*
 !etc/systemd/system/systemd-nspawn@.service.d
 
 !etc/modprobe.d
+!etc/fstab

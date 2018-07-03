@@ -1,0 +1,17 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+
+# UUID=9E2A-D567
+/dev/sda1           	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
+
+# UUID=ee6f53fb-aa3b-4443-a502-fa4c2cb3eb58
+/dev/sda2           	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# UUID=cf026abb-cdec-472c-9428-4dbabc644413
+/dev/sda3           	/home     	ext4      	rw,relatime,data=ordered	0 2
+
+#My Drives
+UUID=229AAC5A9AAC2C6B                     /run/media/alkeryn/Stock              ntfs-3g defaults                 0 0
+UUID=67DA2A606F7EB22D                     /run/media/alkeryn/Stock2             ntfs-3g defaults	         0 0
