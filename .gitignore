@@ -42,3 +42,7 @@ etc/systemd/system/*
 !etc/modprobe.d
 !etc/fstab
 !etc/sudoers
+
+!boot
+boot/*
+!boot/loader
