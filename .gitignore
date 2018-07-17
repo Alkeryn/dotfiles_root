@@ -21,11 +21,13 @@ etc/libvirt/*
 !etc/libvirt/qemu
 !etc/libvirt/qemu.conf
 
+!etc/pacman.conf
+
 !etc/pulse
 etc/pulse/*
 !etc/pulse/daemon.conf
 
-!etc/pacman.conf
+!etc/polkit-1
 
 !etc/samba
 etc/samba/*
