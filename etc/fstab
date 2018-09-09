@@ -1,16 +1,16 @@
-# 
 # /etc/fstab: static file system information
 #
 # <file system>	<dir>	<type>	<options>	<dump>	<pass>
 
-# UUID=9E2A-D567
-/dev/sda1           	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
+# /dev/nvme0n1p1
+UUID=36BD-04DC      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
 
-# UUID=ee6f53fb-aa3b-4443-a502-fa4c2cb3eb58
-/dev/sda2           	/         	ext4      	rw,relatime,data=ordered	0 1
+# /dev/nvme0n1p2 LABEL=Loonix
+UUID=76f00bdf-eee5-4363-9a8d-54c94c6119b5	/         	btrfs     	rw,relatime,compress=lzo,ssd,space_cache,subvolid=259,subvol=/root/Arch	0 0
 
-# UUID=cf026abb-cdec-472c-9428-4dbabc644413
-/dev/sda3           	/home     	ext4      	rw,relatime,data=ordered	0 2
+# /dev/nvme0n1p2 LABEL=Loonix
+UUID=76f00bdf-eee5-4363-9a8d-54c94c6119b5	/home     	btrfs     	rw,relatime,compress=lzo,ssd,space_cache,subvolid=260,subvol=/data/home	0 0
+
 
 #My Drives
 UUID=229AAC5A9AAC2C6B                     /run/media/alkeryn/Stock              ntfs-3g defaults                 0 0

@@ -26,6 +26,7 @@ or other application using the libvirt API.
     <type arch='x86_64' machine='pc-q35-2.11'>hvm</type>
     <loader readonly='yes' type='pflash'>/usr/share/ovmf/x64/OVMF_CODE.fd</loader>
     <nvram>/var/lib/libvirt/qemu/nvram/Windows10_VARS.fd</nvram>
+    <boot dev='hd'/>
     <bootmenu enable='no'/>
   </os>
   <features>
@@ -59,27 +60,20 @@ or other application using the libvirt API.
     <emulator>/usr/bin/qemu-system-x86_64</emulator>
     <disk type='file' device='cdrom'>
       <driver name='qemu' type='raw'/>
+      <source file='/home/alkeryn/App/ISO/virtio-win-0.1.141.iso'/>
       <target dev='sda' bus='sata'/>
       <readonly/>
       <address type='drive' controller='0' bus='0' target='0' unit='0'/>
     </disk>
-    <disk type='file' device='cdrom'>
-      <driver name='qemu' type='raw'/>
-      <source file='/home/alkeryn/App/ISO/virtio-win-0.1.141.iso'/>
-      <target dev='sdb' bus='sata'/>
-      <readonly/>
-      <address type='drive' controller='0' bus='0' target='0' unit='1'/>
-    </disk>
     <disk type='file' device='disk'>
       <driver name='qemu' type='qcow2' cache='writeback'/>
-      <source file='/home/alkeryn/App/VM/win10.qcow2'/>
+      <source file='/home/alkeryn/Drives/winssd/Windows10.qcow2'/>
       <target dev='vda' bus='virtio'/>
-      <boot order='1'/>
       <address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0'/>
     </disk>
     <disk type='file' device='disk'>
       <driver name='qemu' type='qcow2' cache='writeback'/>
-      <source file='/run/media/alkeryn/Stock/A mwa/zVM/Games.qcow2'/>
+      <source file='/home/alkeryn/Drives/winssd/Games.qcow2'/>
       <target dev='vdb' bus='virtio'/>
       <address type='pci' domain='0x0000' bus='0x0a' slot='0x00' function='0x0'/>
     </disk>
