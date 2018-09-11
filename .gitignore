@@ -10,6 +10,10 @@ root/*
 !etc
 etc/*
 
+!etc/default
+etc/default/*
+!etc/default/grub
+
 !etc/ssh
 etc/ssh/*
 !etc/ssh/sshd_config
@@ -47,7 +51,3 @@ etc/systemd/system/*
 !etc/modprobe.d
 !etc/fstab
 !etc/sudoers
-
-!boot
-boot/*
-!boot/loader
