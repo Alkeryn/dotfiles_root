@@ -11,6 +11,9 @@ UUID=76f00bdf-eee5-4363-9a8d-54c94c6119b5	/         	btrfs     	rw,relatime,comp
 # /dev/nvme0n1p2 LABEL=Loonix
 UUID=76f00bdf-eee5-4363-9a8d-54c94c6119b5	/home     	btrfs     	rw,relatime,compress=lzo,ssd,space_cache,subvolid=260,subvol=/data/home	0 0
 
+# /dev/nvme0n1p2 LABEL=Loonix
+UUID=76f00bdf-eee5-4363-9a8d-54c94c6119b5	/mnt/Loonix     btrfs     	rw,relatime,compress=lzo,ssd,space_cache,subvolid=259	0 0
+
 
 #My Drives
 UUID=229AAC5A9AAC2C6B                     /run/media/alkeryn/Stock              ntfs-3g defaults                 0 0
