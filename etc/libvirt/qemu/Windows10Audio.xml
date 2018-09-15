@@ -67,14 +67,14 @@ or other application using the libvirt API.
     </disk>
     <disk type='file' device='disk'>
       <driver name='qemu' type='qcow2' cache='writeback'/>
-      <source file='/home/alkeryn/Drives/winssd/Windows10.qcow2'/>
-      <target dev='vda' bus='virtio'/>
+      <source file='/home/alkeryn/Drives/winssd/windows/Windows10.qcow2'/>
+      <target dev='vdc' bus='virtio'/>
       <address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0'/>
     </disk>
     <disk type='file' device='disk'>
       <driver name='qemu' type='qcow2' cache='writeback'/>
-      <source file='/home/alkeryn/Drives/winssd/Games.qcow2'/>
-      <target dev='vdb' bus='virtio'/>
+      <source file='/home/alkeryn/Drives/winssd/games/games.qcow2'/>
+      <target dev='vdd' bus='virtio'/>
       <address type='pci' domain='0x0000' bus='0x0a' slot='0x00' function='0x0'/>
     </disk>
     <controller type='usb' index='0' model='nec-xhci'>
