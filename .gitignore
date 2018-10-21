@@ -53,3 +53,4 @@ etc/systemd/system/*
 !etc/modprobe.d
 !etc/fstab
 !etc/sudoers
+!etc/resolv.conf
