@@ -13,7 +13,7 @@ or other application using the libvirt API.
   <vcpu placement='static'>4</vcpu>
   <os>
     <type arch='x86_64' machine='pc-i440fx-3.0'>hvm</type>
-    <boot dev='hd'/>
+    <bootmenu enable='no'/>
   </os>
   <features>
     <acpi/>
@@ -39,10 +39,17 @@ or other application using the libvirt API.
     <emulator>/usr/bin/qemu-system-x86_64</emulator>
     <disk type='file' device='cdrom'>
       <driver name='qemu' type='raw'/>
-      <source file='/home/alkeryn/App/ISO/ubuntu-18.04.1-desktop-amd64.iso'/>
-      <target dev='sda' bus='sata'/>
+      <source file='/home/alkeryn/Downloads/FR_windows_xp_pro_avec_service_pack_3_x86_cd_vl_x14-73982.iso'/>
+      <target dev='hda' bus='ide'/>
       <readonly/>
       <address type='drive' controller='0' bus='0' target='0' unit='0'/>
+    </disk>
+    <disk type='file' device='disk'>
+      <driver name='qemu' type='qcow2' cache='writeback'/>
+      <source file='/home/alkeryn/Drives/winssd/Others/XP.qcow2'/>
+      <target dev='hdb' bus='ide'/>
+      <boot order='1'/>
+      <address type='drive' controller='0' bus='0' target='0' unit='1'/>
     </disk>
     <controller type='usb' index='0' model='ich9-ehci1'>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x7'/>
