@@ -1,0 +1,22 @@
+<!--
+WARNING: THIS IS AN AUTO-GENERATED FILE. CHANGES TO IT ARE LIKELY TO BE
+OVERWRITTEN AND LOST. Changes to this xml configuration should be made using:
+  virsh net-edit lanonly
+or other application using the libvirt API.
+-->
+
+<network>
+  <name>lanonly</name>
+  <uuid>95ec2b36-72b9-4bfd-9939-6f8460f21500</uuid>
+  <forward dev='enp12s0' mode='nat'>
+    <interface dev='enp12s0'/>
+  </forward>
+  <bridge name='virbr2' stp='on' delay='0'/>
+  <mac address='52:54:00:7e:d9:10'/>
+  <domain name='lanonly'/>
+  <ip address='192.168.2.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.2.128' end='192.168.2.254'/>
+    </dhcp>
+  </ip>
+</network>
