@@ -4,3 +4,4 @@
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 LIBVIRT_DEFAULT_URI=qemu:///system
+QT_STYLE_OVERRIDE=gtk2
